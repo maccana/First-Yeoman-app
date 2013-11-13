@@ -4,22 +4,22 @@
 		<li><a href="#">About</a></li>
 		<li><a href="#">Contact</a></li>
 	</ul>
-	<h3 class="text-muted">mytodo app</h3>
+	<h3 class="text-muted">mytodo app - Built with Yeoman</h3>
 </div>
-
 <div class="hero-unit">
 	<h2>Todos List</h2>
+	<p ng-repeat="todo in todos">
+		<input type="text" ng-model="todo">
+	</p>
 </div>
 <p>Add a new todo item:</p>
 <form>
 	<div class="controls form-inline">
 		<input type="text"><br><br>
-		<input type="button" class="btn btn-primary" value="Add" >
+		<input type="button" class="btn btn-primary" value="Add Item" >
 	</div>
-
 </form>	
 <br>
-
 <div class="footer">
 	<p>To do apps are awesome with Yeoman and Angularjs!</p>
 </div>
