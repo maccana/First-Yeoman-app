@@ -12,4 +12,8 @@ angular.module('mytodoApp')
     	$scope.todos.push($scope.todo);
     	$scope.todo = '';
     }
+    $scope.removeTodo = function () {
+    	$scope.todos.pop($scope.todo);
+    	$scope.todo = '';
+    }
   });
