@@ -11,14 +11,17 @@
 	<p ng-repeat="todo in todos">
 		<input type="text" ng-model="todo">
 	</p>
+	<p>Add a new todo item:</p>
+	<form ng-submit="addToDo()">
+		<div class="controls form-inline">
+			<input type="text" ng-model="todo" size="20">
+			<br><br>
+			<input type="submit" class="btn btn-primary" value="Add Item" >
+		</div>
+	</form>	
 </div>
-<p>Add a new todo item:</p>
-<form>
-	<div class="controls form-inline">
-		<input type="text"><br><br>
-		<input type="button" class="btn btn-primary" value="Add Item" >
-	</div>
-</form>	
+
+
 <br>
 <div class="footer">
 	<p>To do apps are awesome with Yeoman and Angularjs!</p>
