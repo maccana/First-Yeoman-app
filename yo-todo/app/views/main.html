@@ -1,0 +1,51 @@
+<div class="header">
+	<ul class="nav nav-pills pull-right">
+		<!-- <li class="active"><a href="#">Home</a></li> -->
+		<!-- <li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li> -->
+	</ul>
+	<h3 class="text-muted">A ToDo App - Built with Yeoman</h3>
+</div>
+<div class="hero-unit todo-app">
+
+	<div class="form-group">
+		<h1>Bootstrap To-Do List Template</h1>
+	    <form role="form" ng-submit="addTodo()">
+	      <input type="text" class="form-control" ng-model="todo" placeholder="Add a task...." name="todo">
+				<input type="submit" class="btn btn-primary" value="Add Item" >
+			</form>
+	    <!-- <input type="submit" class="btn btn btn-primary">Add</input> -->
+	</div>
+
+  <ul class="list-unstyled" id="todo" ng-repeat="todo in todos">
+  	<li>{{ todo }}
+			<a class="btn" ng-click="removeTodo($index)"
+			style="border:1px solid #d7d7d7">&times;</a>
+		</li>
+  </ul>
+
+
+	<!-- <h2>Todo List</h2> -->
+	<div ui-sortable>
+		<!-- <div ng-repeat="todo in todos">
+
+			<div class="todo-item">{{ todo }}</div>
+			<a class="btn" ng-click="removeTodo($index)"
+			style="border:1px solid #d7d7d7">X</a>
+		</div> -->
+	</div>
+
+	<!-- <p>Add a new todo item:</p> -->
+	<!-- <form ng-submit="addTodo()">
+		<div class="controls form-inline">
+			<input type="text" ng-model="todo" size="20">
+			<br><br>
+			<input type="submit" class="btn btn-primary" value="Add Item" >
+		</div>
+	</form> -->
+</div>
+
+<br>
+<div class="footer">
+	<p>To do apps are awesome with Yeoman and Angularjs!</p>
+</div>
