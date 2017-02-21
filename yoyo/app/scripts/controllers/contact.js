@@ -9,6 +9,7 @@
  */
 angular.module('yoyoApp')
   .controller('ContactCtrl', function ($scope) {
+    
     $scope.awesomeThings = [
       'Here',
       'is',
